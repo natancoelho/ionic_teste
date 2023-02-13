@@ -39,5 +39,9 @@ export class UtilityService{
 
         (await toastei).present();
         setTimeout(this.refresh, 2000);
-    }
 }
+        refresh(){
+            location.reload();
+        }
+    
+} 
