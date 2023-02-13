@@ -26,4 +26,18 @@ export class UtilityService{
 
         (await load).present();
     }
+    // Método do Toast
+
+    async tostando(message: string, position: "top" | "middle" | "bottom",
+    duration: number, color: string){
+        const toastei = this.toast.create({
+            message,
+            position,
+            duration,
+            color
+        });
+
+        (await toastei).present();
+        setTimeout(this.refresh, 2000);
+    }
 }
