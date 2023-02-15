@@ -8,12 +8,13 @@ import { ContatoPageRoutingModule } from './contato-routing.module';
 
 import { ContatoPage } from './contato.page';
 
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ContatoPageRoutingModule
+    ContatoPageRoutingModule,
   ],
   declarations: [ContatoPage]
 })
